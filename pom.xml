@@ -23,13 +23,13 @@
   </licenses>
 
   <properties>
-    <ome-common.version>6.1.1</ome-common.version>
-    <ome-model.version>6.5.0</ome-model.version>
-    <bioformats.version>8.5.0</bioformats.version>
-    <formats-gpl.version>${bioformats.version}</formats-gpl.version>
-    <formats-bsd.version>${bioformats.version}</formats-bsd.version>
-    <formats-api.version>${bioformats.version}</formats-api.version>
-    <bio-formats-examples.version>8.5.0</bio-formats-examples.version>
+    <ome-common.version>6.3.1-SNAPSHOT</ome-common.version>
+    <ome-model.version>6.6.1-SNAPSHOT</ome-model.version>
+    <bioformats.version>8.6.0-SNAPSHOT</bioformats.version>
+    <formats-gpl.version>8.6.0-SNAPSHOT</formats-gpl.version>
+    <formats-bsd.version>8.6.0-SNAPSHOT</formats-bsd.version>
+    <formats-api.version>8.6.0-SNAPSHOT</formats-api.version>
+    <bio-formats-examples.version>8.6.0-SNAPSHOT</bio-formats-examples.version>
     <logback.version>1.5.25</logback.version>
 
     <sphinx.bioformats.source.branch>develop</sphinx.bioformats.source.branch>
