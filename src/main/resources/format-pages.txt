@@ -539,6 +539,7 @@ mif = true
 extensions = .vsi
 developer = `Olympus <https://www.olympus-global.com>`_
 bsd = no
+software = `Evident OlyVIA <https://evidentscientific.com/en/downloads>`__
 weHave = * many example datasets \n
 * `public sample images <https://downloads.openmicroscopy.org/images/CellSens/>`__ \n
 * a VSI specification document (v1.6, 2012 November 27, in PDF) \n
