@@ -79,7 +79,21 @@ Several keys have support for units and can be expressed as ``KEY=VALUE UNIT`` w
     echo "physicalSizeZ=.002 mm" >> physicalSizes.fake.ini
 
 Axis orientation metadata can also be specified using the `AxisOrientationType_<axis index>`
-and `AxisOrientationTerm_<axis index>` keys. The type is expected to be `ANATOMICAL`.
+and `AxisOrientationTerm_<axis index>` keys. The type is expected to be `anatomical`.
+For example, an :file:`.ini` file with 10 Z sections, where axis index 0 corresponds to `X`,
+index 1 corresponds to `Y`, and index 2 corresponds to `Z`, matching the axis order specified by the `dimOrder` key::
+
+    sizeZ=10
+    dimOrder=XYZTC
+
+    [series_0]
+    AxisOrientationType_0=anatomical
+    AxisOrientationTerm_0=rostral-to-caudal
+    AxisOrientationType_1=anatomical
+    AxisOrientationTerm_1=cranial-to-caudal
+    AxisOrientationType_2=anatomical
+    AxisOrientationTerm_2=dorsal-to-ventral
+
 
 High-content screening
 ----------------------
@@ -327,6 +341,12 @@ with their default values, is shown below.
     - * PositionZUnit_x
       * string defining the units for the corresponding ``PositionZ_x`` [2]_
       * microns
+    - * AxisOrientationTerm_x
+      * controlled vocabulary term for the orientation of axis with index ``x`` [2]_
+      * null
+    - * AxisOrientationType_x
+      * type of orientation for axis with index ``x`` (only ``anatomical`` supported) [2]_
+      * null
     - * resolutions
       * number of pyramid levels or sub-resolutions for each series
       * 1
